@@ -1,0 +1,124 @@
+ul {
+  padding-left: 0px; }
+  ul li {
+    list-style-type: none; }
+
+.first {
+  color: black;
+  background-color: red; }
+
+.second {
+  color: white;
+  background-color: blue; }
+
+.image {
+  width: 100px;
+  height: 100px; }
+
+div.navbar-info {
+  font-weight: bold; }
+
+label[for="GameSlider"] {
+  margin-right: 12px; }
+
+table#GameTable {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  table#GameTable td .identifier {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    opacity: .7;
+    padding-top: 3%; }
+  table#GameTable td .bomb {
+    color: white;
+    background-color: black; }
+  table#GameTable td .neutral {
+    color: black;
+    background-color: yellow; }
+  table#GameTable td .cell {
+    position: relative;
+    border: medium solid white; }
+  table#GameTable td .selected {
+    border: medium solid black; }
+
+ul#MessageList {
+  height: 450px;
+  overflow-y: scroll; }
+  ul#MessageList li {
+    border-bottom: thin solid #333333; }
+    ul#MessageList li div.row {
+      margin-right: 0px; }
+  ul#MessageList li:last-child {
+    border-bottom: none; }
+  ul#MessageList div.username {
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: bold;
+    float: left; }
+  ul#MessageList div.created {
+    display: inline-block;
+    font-size: .75rem;
+    float: right; }
+
+div.submit {
+  float: right; }
+
+a.radial-link {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 1102; }
+
+div.radial {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  z-index: 1100; }
+
+div.radial-center {
+  position: relative;
+  top: 20px;
+  left: 20px; }
+  div.radial-center a {
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    z-index: 1101;
+    /* Slide out/in transition */
+    transition: all .2s linear;
+    opacity: 0;
+    left: -30px;
+    top: -30px;
+    /* */ }
+  div.radial-center a.open {
+    opacity: 1; }
+
+form#CategoryForm {
+  display: inline-block;
+  margin-left: 5px; }
+  form#CategoryForm label, form#CategoryForm input, form#CategoryForm div {
+    vertical-align: middle; }
+
+div#Log .submission-label {
+  font-weight: bold; }
+div#Log ul.list-inline li {
+  padding-bottom: 10px; }
+
+/*# sourceMappingURL=game.css.map */

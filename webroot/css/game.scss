@@ -1,0 +1,167 @@
+$bomb:    black;
+$first:   red;
+$second:  blue;
+$neutral: yellow;
+
+ul {
+	padding-left: 0px;
+	li {
+		list-style-type: none;
+	}
+}
+
+.first {
+	color:            black;
+	background-color: $first;
+}
+.second {
+	color:            white;
+	background-color: $second;
+}
+
+.image {
+	width:  100px;
+	height: 100px;
+}
+
+div.navbar-info {
+	font-weight: bold;
+}
+
+label[for="GameSlider"] {
+	margin-right: 12px;
+}
+
+table#GameTable {
+	margin-top:    10px;
+	margin-bottom: 10px;
+	td {
+		.identifier {
+			width:       25%;
+			height:      25%;
+			position:    absolute;
+			text-align:  center;
+			color:       white;
+			font-weight: bold;
+			opacity:     .7;
+			padding-top: 3%;
+		}
+		.bomb {
+			color:            white;
+			background-color: $bomb;
+		}
+		.neutral {
+			color:            black;
+			background-color: $neutral;
+		}
+		.cell {
+			position: relative;
+			border: medium solid white;
+		}
+		.selected {
+			border: medium solid black;
+		}
+	}
+}
+
+ul#MessageList {
+	height: 450px;
+	overflow-y: scroll;
+	li {
+		border-bottom: thin solid #333333;
+		div.row {
+			margin-right: 0px;
+		}
+	}
+	li:last-child {
+		border-bottom: none;
+	}
+	div.username {
+		display:     inline-block;
+		font-size:   .75rem;
+		font-weight: bold;
+		float: left;
+	}
+	div.created {
+		display:   inline-block;
+		font-size: .75rem;
+		float:     right;
+	}
+}
+
+div.submit {
+	float: right;
+}
+
+$radialsize: 40px;
+
+a.radial-link {
+	position:        absolute;
+	display:         block;
+
+	width:           $radialsize;
+	height:          $radialsize;
+
+	border:          2px solid #333333;
+	border-radius:   50%;
+
+	padding:         7px;
+	text-align:      center;
+	text-decoration: none;
+	color:           black;
+
+	z-index:         1102;
+}
+div.radial {
+	display: inline-block;
+
+	width:   $radialsize;
+	height:  $radialsize;
+
+	z-index: 1100;
+}
+div.radial-center {
+	position: relative;
+	top:      $radialsize / 2;
+	left:     $radialsize / 2;
+	a {
+		position:         absolute;
+		color:            #FFFFFF;
+		background-color: #000000;
+		width:            30px;
+		height:           30px;
+		padding:          3px;
+		text-align:       center;
+		text-decoration:  none;
+		border-radius:    50%;
+		z-index:          1101;
+		/* Slide out/in transition */
+		transition:       all .2s linear;
+		opacity:          0;
+		left:             -30px;
+		top:              -30px;
+		/* */
+	}
+	a.open {
+		opacity: 1;
+	}
+}
+
+form#CategoryForm {
+	display: inline-block;
+	margin-left: 5px;
+	label, input, div {
+		vertical-align: middle;
+	}
+}
+
+div#Log {
+	.submission-label {
+		font-weight: bold;
+	}
+	ul.list-inline {
+		li {
+			padding-bottom: 10px;
+		}
+	}
+}

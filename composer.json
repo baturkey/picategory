@@ -1,0 +1,18 @@
+{
+    "name": "Picategory",
+    "config": {
+        "vendor-dir": "Vendor/"
+    },
+    "require": {
+        "cakephp/cakephp": "2.7.*",
+        "maurymmarques/markdown-plugin": "dev-master",
+        "components/jquery": "^2.1",
+        "components/jqueryui": "^1.11",
+        "twbs/bootstrap": "^3.3",
+        "cakedc/users": "^2.1.0",
+        "seiyria/bootstrap-slider": "^4.8"
+    },
+    "require-dev": {
+        "cakephp/debug_kit": "^2.2.0"
+    }
+}

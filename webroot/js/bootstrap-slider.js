@@ -1,0 +1,1 @@
+../../Vendor/seiyria/bootstrap-slider/js/bootstrap-slider.js

@@ -1,0 +1,26 @@
+div.navbar {
+	border: 0;
+}
+div.navbar-default {
+	color: white;
+	background-color: #333333;
+	border-radius: 0;
+	min-height: 30px;
+	margin-bottom: 5px;
+	#Logo {
+		float: left;
+		font-size: 2rem;
+	}
+	.menu {
+		float: right;
+	}
+	a {
+		color: white;
+	}
+}
+div.navbar-fixed-bottom {
+	color: white;
+	background-color: #333333;
+	min-height: 10px;
+	margin-top: 10px;
+}
